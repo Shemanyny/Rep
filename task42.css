@@ -1,0 +1,125 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: yellow;
+        margin-bottom: 100px;
+        
+      }
+      
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        padding-block: 20px;
+        text-align: center;
+        font-size: 5rem;
+      }
+      .container-2 {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        /* grid-template-columns: repeat(3 1fr); */
+        grid-template-columns: repeat(auto-fit, minmax(250 1fr));
+        /* the usefulness of dense is to close the space in btwn... packed together */
+        grid-auto-flow: dense;
+        grid-auto-rows: 300px;
+        gap: 20px;
+        
+      }
+      .picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 0 20px 0; 
+      }
+      
+      footer{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 20px;
+      }
+      
+      
+      .picture:nth-child(1) {
+        grid-row: span 2;
+      }
+      
+      .picture:nth-child(2) {
+        grid-column: span 2;
+      }
+      
+      .picture:nth-child(5) {
+        grid-column: span 2;
+      }
+      
+      .picture:nth-child(6) {
+        grid-row: span 2;
+      }
+      
+      .picture:nth-child(7) {
+        grid-row: span 2; 
+        
+      }
+      
+      .picture:nth-child(9) {
+        grid-area: span 2 / span 2;
+      }
+      
+      .picture:nth-child(8) {
+        grid-area: span 2 / span 2;
+      }
+      
+      .picture:nth-child(11) {
+        grid-area: span 2 / span 2;
+      }
+      .picture{
+        transition: all 0.4s ease;
+        cursor: pointer;
+      }
+      .picture:hover{
+        transform: translate(200px);
+        
+      
+      }
+      
+      @media(max-width: 765px) {
+        .picture:nth-child(1) {
+        grid-row: span 1;
+      }
+      
+      .picture:nth-child(2) {
+        grid-column: span 1;
+      }
+      
+      .picture:nth-child(5) {
+        grid-column: span 1;
+      }
+      
+      .picture:nth-child(6) {
+        grid-row: span 1;
+      }
+      
+      .picture:nth-child(7) {
+        grid-row: span 1; 
+        
+      }
+      
+      .picture:nth-child(9) {
+        grid-area: span 1 / span 1;
+      }
+      
+      .picture:nth-child(8) {
+        grid-area: span 1 / span 1;
+      }
+      
+      .picture:nth-child(11) {
+        grid-area: span 1 / span 1;
+      }
+      }
+
+      
